@@ -1,0 +1,11 @@
+/* Image Carousel type 4
+-------------------------------------------------- */
+.w-image-carousel-type4 .services-carousel img {
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.w-image-carousel-type4 .services-carousel img:hover {
+    opacity: 0.5;
+}

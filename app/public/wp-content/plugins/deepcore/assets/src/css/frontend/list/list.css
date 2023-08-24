@@ -1,0 +1,145 @@
+.number {
+	list-style: none;
+}
+
+.number li {
+	min-height: 40px;
+	position: relative;
+	margin-bottom: 23px;
+	overflow: hidden;
+	color: #252425;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.number li span.num {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	padding-top: 9px;
+	line-height: 1.5;
+	margin-right: 13px;
+	font-size: 16px;
+	font-weight: 500;
+	float: left;
+}
+
+ul.check li:before,
+li.check:before,
+ul.plus li:before,
+li.plus:before,
+ul.star li:before,
+li.star:before,
+ul.arrow li:before,
+li.arrow:before,
+ul.arrow2 li:before,
+li.arrow2:before,
+ul.square li:before,
+li.square:before,
+ul.circle li:before,
+li.circle:before,
+ul.cross li:before,
+li.cross:before,
+ul.minus li:before,
+li.minus:before {
+	padding-right: 5px;
+	font-family: WnFontAwesome;
+	font-weight: 900;
+}
+
+ul.check li:before,
+li.check:before {
+	content: "\f00c";
+	color: #437df9;
+}
+
+ul.plus li:before,
+li.plus:before {
+	content: "\f067";
+	color: #6db01b;
+}
+
+ul.minus li:before,
+li.minus:before {
+	content: "\f068";
+	color: #ff0000;
+}
+
+ul.star li:before,
+li.star:before {
+	content: "\f005";
+	color: #f6dc15;
+	font-size: 11px;
+}
+
+ul.arrow li:before,
+li.arrow:before {
+	content: "\f105";
+	color: #00b1b7;
+	font-weight: bold;
+}
+
+ul.arrow2 li:before,
+li.arrow2:before {
+	content: "\f105";
+	color: #7d858d;
+}
+
+ul.square {
+	margin-left: 21px;
+}
+
+ul.square li,
+li.square {
+	position: relative;
+	padding-left: 12px;
+}
+
+ul.square li:before,
+li.square:before {
+	content: "";
+	width: 1px;
+	height: 5px;
+	position: absolute;
+	background: #437df9;
+	left: 0px;
+	top: 8px;
+}
+
+ul.circle li:before,
+li.circle:before {
+	content: "\f111";
+	font-size: 6px;
+	color: #437df9;
+}
+
+ul.cross li:before,
+li.cross:before {
+	content: "\f00d";
+	color: #437df9;
+}
+
+ul.check li,
+li.check,
+ul.plus li,
+li.plus,
+ul.minus li,
+li.minus,
+ul.star li,
+li.star,
+ul.arrow li,
+li.arrow,
+ul.arrow2 li,
+li.arrow2,
+ul.square li,
+li.square,
+ul.circle li,
+li.circle,
+ul.cross li,
+li.cross {
+	padding-bottom: 1px;
+	list-style: none;
+}

@@ -1,0 +1,168 @@
+/* Quick access */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.hamburger {
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background: #008aff;
+    background: linear-gradient(95deg, #36a2ff 0%, #008aff 40%, #0368e4 100%);
+    box-shadow: 0 5px 23px -3px #008aff;
+    border: 0;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 15px 10px;
+    overflow: visible;
+}
+.hamburger:hover {
+    opacity: 0.94;
+}
+.hamburger-box {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding-top: 14px;
+}
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+.hamburger-inner::before {
+    top: -8px;
+}
+.hamburger-inner::after {
+    bottom: -10px;
+}
+/*  hamburger icon */
+.hamburger--spring-r .hamburger-inner {
+    top: auto;
+    bottom: 5px;
+    transition-duration: 0.13s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--spring-r .hamburger-inner::after {
+    top: -16px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0s linear;
+}
+.hamburger--spring-r .hamburger-inner::before {
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--spring-r.is-active .hamburger-inner {
+    transform: translate3d(0, -10px, 0) rotate(-45deg);
+    transition-delay: 0.22s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--spring-r.is-active .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0s 0.22s linear;
+}
+.hamburger--spring-r.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(90deg);
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.wn-admin-qacs-wrap {
+    z-index: 99999;
+    position: fixed;
+    right: 3px;
+    bottom: 9px;
+}
+.whb-frontend-builder-wrap .wn-admin-qacs-wrap {
+    display: none;
+}
+.wn-admin-qacs {
+    opacity: 0;
+    transition: all .8s cubic-bezier(0.76, 0.02, 0.32, 0.98);
+    -webkit-transition: all .8s cubic-bezier(0.76, 0.02, 0.32, 0.98);
+    background: rgba(255,255,255,0.98);
+    box-shadow: 0 8px 42px -6px rgba(0,0,0,0.23);
+    border-radius: 9px;
+    padding: 60px 20px 15px;
+    position: absolute;
+    width: 250px;
+    right: -400px;
+    bottom: 68px;
+}
+.wn-admin-qacs:before {
+    background: #008aff;
+    background: linear-gradient(32deg, #36a2ff 0%, #008aff 40%, #0368e4 100%);
+    box-shadow: 0 1px 32px -4px #008aff;
+    border-radius: 9px 9px 0 0;
+    content: "Quick Access";
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    height: 46px;
+    line-height: 44px;
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+}
+.wn-admin-qacs li a {
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.wn-admin-qacs li a:before {
+	content:"\e65d";
+	font-family: 'themify';
+    speak: none;
+    font-size: 11px;
+    margin-right: 2px;
+    font-style: normal;
+    font-weight: normal;
+    color: #008aff;
+}
+.wn-admin-qacs li a:hover {
+    color: #008aff;
+}
+.hamburger.is-active+.wn-admin-qacs {
+    opacity: 1;
+    right: 18px;
+}

@@ -1,0 +1,108 @@
+
+/* Icon Box 24
+-------------------------------------------------- */
+
+.icon-box24 {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    padding: 0;
+    text-shadow: 0 0 0;
+    transition: .3s ease;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    border: 1px solid #eee;
+    margin-top: 5px;
+    box-shadow: 0 2px 0 0px rgba(0, 0, 0, 0.016);
+}
+
+@media only screen and (min-width: 768px) {
+    .brderleftnone .icon-box24 {
+        border-left: none;
+    }
+}
+
+.icon-box24 * {
+    text-shadow: none;
+}
+
+.icon-box24:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 55px;
+    background: #fff;
+    transition: .3s ease;
+}
+
+.icon-box24:after {
+    content: "";
+    position: absolute;
+    top: 54px;
+    left: -1px;
+    right: -1px;
+    border-bottom: 1px solid #eee;
+    z-index: 0;
+    transition: .3s ease;
+}
+
+.icon-box24 i {
+    font-size: 36px;
+    padding: 29px;
+    background: #fff;
+    color: #437df9;
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    border: 1px solid #e6e6e6;
+    border-radius: 100%;
+    box-shadow: 0 2px 0 0px #fafafa;
+    cursor: default;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    z-index: 3;
+    transition: all .3s ease-in-out;
+}
+
+.icon-box24 h4 {
+    font-size: 19px;
+    padding-top: 65px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    color: #282727;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.icon-box24 p {
+    font-size: 15px;
+    color: #7a7a7a;
+    text-align: center;
+    padding-bottom: 48px;
+    padding: 0 6%;
+}
+
+.icon-box24.w-border-left {
+    border-left: none;
+}
+
+.icon-box24.w-border-right {
+    border-right: none;
+}
+
+.icon-box24:hover i {
+    border-color: transparent;
+    background: #437df9;
+    color: #fff !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .icon-box24 {
+        margin: 30px 0 10px;
+    }
+}

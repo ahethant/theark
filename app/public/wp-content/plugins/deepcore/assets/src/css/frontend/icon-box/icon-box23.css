@@ -1,0 +1,155 @@
+
+/* Icon Box 23
+-------------------------------------------------- */
+
+.icon-box23 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 27px;
+    margin-bottom: 35px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.icon-box23 i,
+.icon-box23 img {
+    width: 40px;
+    height: 40px;
+    color: #437df9;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+    -webkit-transition: all .38s ease;
+    transition: all .38s ease;
+}
+
+.icon-box23 h4 {
+    padding-top: 9px;
+    padding-bottom: 20px;
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 1px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.icon-box23 h4:before {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 56px;
+    height: 1px;
+    background: #e3e3e3;
+    right: 50%;
+    transform: translate(50%, 0);
+    -webkit-transform: translate(50%, 0);
+}
+
+.icon-box23 h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 16px;
+    height: 1px;
+    background: #437df9;
+    right: 50%;
+    transform: translate(50%, 0);
+    -webkit-transform: translate(50%, 0);
+}
+
+.icon-box23 p {
+    padding: 10px 30px;
+}
+
+.icon-box23.bordertop,
+.icon-box23.borderbottom,
+.icon-box23.borderright,
+.icon-box23.borderleft {
+    position: relative;
+}
+
+.icon-box23:hover.icon-box23 h4:before {
+    width: 177px;
+    background: #437df9;
+}
+
+.icon-box23.bordertop h4:after {
+    content: "";
+    position: absolute;
+    top: -105px;
+    height: 1px;
+    width: 100%;
+    background: #e6e6e6;
+}
+
+.icon-box23.borderbottom p:before {
+    content: "";
+    position: absolute;
+    bottom: -9%;
+    left: 1%;
+    height: 1px;
+    width: 97%;
+    background: #e6e6e6;
+}
+
+.icon-box23.borderright:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -4%;
+    height: 225px;
+    width: 1px;
+    background: #e6e6e6;
+}
+
+.icon-box23.borderleft:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -4%;
+    height: 225px;
+    width: 1px;
+    background: #e6e6e6;
+}
+
+@media ( min-width:992px) and ( max-width: 1200px) {
+    .icon-box23.borderbottom p:before,
+    .icon-box23.bordertop i:after,
+    .icon-box23.bordertop img:after {
+        width: 270px;
+    }
+    .icon-box23.borderleft:after {
+        left: -6%;
+    }
+    .icon-box23.borderright:before {
+        right: -5%;
+    }
+}
+
+@media ( min-width:768px) and ( max-width: 991px) {
+    .icon-box23.borderbottom p:before,
+    .icon-box23.bordertop i:after,
+    .icon-box23.bordertop img:after {
+        width: 220px;
+    }
+    .icon-box23.borderright:before,
+    .icon-box23.borderleft:after {
+        height: 250px;
+    }
+}
+
+@media ( max-width:767px) {
+    .icon-box23.borderbottom p:before,
+    .icon-box23.bordertop i:after,
+    .icon-box23.bordertop img:after {
+        display: none;
+    }
+    .icon-box23.borderright:before,
+    .icon-box23.borderleft:after {
+        display: none;
+    }
+}

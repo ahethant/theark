@@ -1,0 +1,133 @@
+.sidebar .widget .instagram-feed ul {
+    overflow: hidden;
+}
+
+.sidebar .widget .instagram-feed ul li {
+    padding: 0;
+}
+
+#wrap #footer .instagram-feed ul li:hover {
+    background: none;
+    color: none;
+}
+
+.widget ul.instagram-pics {
+    display: table-row;
+}
+
+.widget ul.instagram-pics li {
+    width: 33.3%;
+    float: left;
+    padding: 1px;
+}
+
+.widget .instagram-feed li,
+#footer.litex .widget .instagram-feed li {
+    border: none;
+    background: none;
+}
+
+.widget .instagram-feed li a {
+    padding: 0;
+    background: none;
+    color: #484848;
+}
+
+.widget .instagram-feed a:hover {
+    padding-left: 0;
+    background: none;
+}
+
+.widget .instagram-feed li:after,
+#footer.litex .widget .instagram-feed li:after {
+    display: none;
+}
+
+.widget .instagram-feed a {
+    float: left;
+    background: none;
+    padding: 0;
+    margin: 0 1px 1px 0;
+}
+
+.widget .instagram-feed li {
+    width: 33.3%;
+    float: left;
+}
+
+.widget .instagram-feed a {
+    margin: 0 1px 1px 0;
+}
+
+.widget .instagram-feed a img {
+    box-shadow: none;
+    transition: all 0.31s ease;
+}
+
+.toggle-top-area .widget .instagram-feed a,
+#footer .widget .instagram-feed a {
+    margin: 0 8px 8px 0;
+}
+
+.toggle-top-area .widget .instagram-feed a img:hover,
+#footer .widget .instagram-feed a img:hover {
+    border-color: #437df9;
+}
+
+.widget .instagram-feed a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.widget .instagram-feed a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    z-index: 993;
+    transition: .3s all ease;
+}
+
+.widget .instagram-feed a:hover:before {
+    border-color: #437df9;
+    border-width: 5px;
+}
+
+#footer.litex .widget .instagram-feed a img {
+    box-shadow: none;
+}
+
+.widget .instagram-feed a:hover,
+#footer.litex .widget .instagram-feed a:hover,
+.sidebar .widget .instagram-feed a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.personal-sidebar .instagram-feed ul {
+    margin-top: 0;
+}
+
+.personal-sidebar .instagram-feed a {
+    padding: 0;
+    margin: 0 12px 12px 0;
+}
+
+#footer.litex .widget .instagram-feed a,
+.sidebar .widget .instagram-feed a {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+@media only screen and (min-width: 1281px) {
+
+    .toggle-top-area .col-md-3 .widget .instagram-feed a img,
+    #footer .col-md-3 .widget .instagram-feed a img {
+        width: 100%;
+        height: auto;
+    }
+}

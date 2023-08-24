@@ -1,0 +1,55 @@
+.wn-like-wrapper a {
+    border-bottom: 0 !important;
+    text-decoration: none !important;
+}
+
+.wn-like-button {
+    padding: 0.375em 0.625em;
+    font-size: 1em;
+    line-height: 1;
+    font-weight: normal;
+}
+
+/* Colors */
+a.liked {
+    color: #da1b1b;
+}
+
+a.liked:hover,
+a.liked:active,
+a.liked:focus {
+    color: #437df9;
+}
+
+a.liked span.wn-like-count,
+.wn-like-count {
+    color: #b4b4b4;
+}
+
+/* Icon */
+.wn-like-icon {
+    margin-right: 0.3125em;
+    vertical-align: middle;
+}
+
+.wn-like-icon svg {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+}
+
+.wn-like-icon svg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Count */
+.wn-like-count {
+    font-size: 0.625em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}

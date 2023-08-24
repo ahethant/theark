@@ -1,0 +1,30 @@
+/* Button
+	================================= */
+.whb-button a {
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	background-color: #437df9;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	white-space: nowrap;
+	text-align: center;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.transparent-header-w.t-dark-w #wrap .whb-col span {
+	color: inherit;
+}
+
+.whb-button a:hover,
+.whb-button a:focus {
+	background-color: #282828;
+	color: #fff;
+}
